@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/imv_ThumbEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"/>
+        <Button
+            android:id="@+id/btn_Camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#92A9AC"
+            android:drawableTop="@android:drawable/ic_menu_camera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="7">
+
+        <EditText
+            android:id="@+id/edt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:height="100dp"
+            android:gravity="bottom"
+            android:layout_weight="3"/>
+
+        <EditText
+            android:id="@+id/edt_Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0$"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/edt_Publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxford"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edt_Edition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_Save"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#FAA2C0"
+                android:text="Save"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/btn_Cancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Cancel"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

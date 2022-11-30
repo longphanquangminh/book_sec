@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:paddingHorizontal="10dp">
+    <ImageView
+        android:id="@+id/imv_Thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/txt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:height="100dp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/txt_Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0$"
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/txt_Publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxford"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
